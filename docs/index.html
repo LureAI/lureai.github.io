@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Support for Cafe Businesses</title>
+    <style>
+        /* Reset default browser styles */
+        body,
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styles for the landing page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        /* Styles for the contact form */
+        .contact-form {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+    <script>
+        function showContactForm() {
+            var form = document.getElementById("contactForm");
+            form.style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>AI Support for Cafe Businesses</h1>
+        <p>Are you a cafe owner looking to leverage AI to enhance your business operations? Our AI solution can help you
+            streamline processes, improve customer experience, and boost profitability.</p>
+        <p>With our AI system, you can:</p>
+        <ul>
+            <li>Automate order taking and payment processing</li>
+            <li>Optimize inventory management and reduce waste</li>
+            <li>Personalize customer recommendations and promotions</li>
+            <li>Analyze customer feedback and sentiment</li>
+            <li>And much more!</li>
+        </ul>
+        <p>Don't miss out on the benefits of AI for your cafe business. Get started today!</p>
+        <p><a href="#" class="button" onclick="showContactForm()">Get Started</a></p>
+        <div id="contactForm" class="contact-form">
+            <h2>Request a 30-minute Consultation</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label
+                <label for="phone">Contact Number (New Zealand):</label>
+                <input type="text" id="phone" pattern="[0-9 ]{3,15}" title="Please enter a valid New Zealand contact number" required>
+            </form>
+        </div>
+    </div>
+</body>
